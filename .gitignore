@@ -1,24 +1,40 @@
-# dependencies
+#dependencies
 /node_modules
 /.pnp
-.pnp.js
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
 
-# next.js
+#testing
+/coverage
+
+next.js
 /.next/
 /out/
 
-# production
+
+#production
 /build
 
-# misc
+#misc
 .DS_Store
-*.pem
+.pem
 
-# debug
-npm-debug.log*
+#debug
+npm-debug.log
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log*
 
-# local env files
-.env*.local
-.env
+#env files (can opt-in for committing if needed)
+.env*
+
+#vercel
+.vercel
+
+#typescript
+*.tsbuildinfo
+next-env.d.ts
